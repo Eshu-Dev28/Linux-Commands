@@ -1,0 +1,174 @@
+## 🗂️ **Basic Linux Commands**
+
+| Command   | Description                        |
+| --------- | ---------------------------------- |
+| `pwd`     | Present working directory kaatuvum |
+| `ls`      | Files list panna                   |
+| `cd`      | Directory change panna             |
+| `mkdir`   | New directory create panna         |
+| `rmdir`   | Empty directory remove panna       |
+| `rm`      | File or folder remove panna        |
+| `cp`      | Copy files or folders              |
+| `mv`      | Move or rename file                |
+| `touch`   | Empty file create panna            |
+| `cat`     | File content display panna         |
+| `head`    | File oda first 10 lines kaatuvum   |
+| `tail`    | File oda last 10 lines kaatuvum    |
+| `clear`   | Screen clear panna                 |
+| `history` | Command history kaatuvum           |
+
+---
+
+## 📁 **File Permissions and Ownership**
+
+| Command | Description                       |
+| ------- | --------------------------------- |
+| `chmod` | File permission change panna      |
+| `chown` | File owner change panna           |
+| `chgrp` | Group ownership change panna      |
+| `umask` | Default permission mask set panna |
+
+---
+
+## ⚙️ **System Information**
+
+| Command    | Description                |
+| ---------- | -------------------------- |
+| `uname -a` | System info kaatuvum       |
+| `hostname` | System name kaatuvum       |
+| `uptime`   | System running time        |
+| `date`     | Current date and time      |
+| `cal`      | Calendar kaatuvum          |
+| `df -h`    | Disk space usage           |
+| `du -sh *` | Folder size list           |
+| `top`      | Running process list live  |
+| `htop`     | Advanced top (interactive) |
+| `free -h`  | Memory usage               |
+| `whoami`   | Current user name          |
+| `id`       | User ID and group info     |
+
+---
+
+## 👥 **User Management**
+
+| Command   | Description                     |
+| --------- | ------------------------------- |
+| `adduser` | New user create panna           |
+| `passwd`  | Password set/change panna       |
+| `deluser` | User delete panna               |
+| `usermod` | Modify user info                |
+| `groups`  | User group list                 |
+| `sudo`    | Superuser command execute panna |
+
+---
+
+## 🌐 **Network Commands**
+
+| Command         | Description                     |
+| --------------- | ------------------------------- |
+| `ping <host>`   | Network connectivity test       |
+| `ifconfig`      | Network interface details (old) |
+| `ip addr show`  | Network info (new)              |
+| `netstat -tuln` | Listening ports check panna     |
+| `ss -tuln`      | Active sockets check panna      |
+| `curl`          | Web request send panna          |
+| `wget`          | File download panna             |
+| `scp`           | File copy remote server-ku      |
+| `ssh`           | Remote login panna              |
+
+---
+
+## 🧩 **Package Management**
+
+| Command              | Description                       |
+| -------------------- | --------------------------------- |
+| `apt update`         | Repository update (Debian/Ubuntu) |
+| `apt upgrade`        | All packages upgrade              |
+| `apt install <pkg>`  | Package install panna             |
+| `apt remove <pkg>`   | Package remove panna              |
+| `yum install <pkg>`  | CentOS/RHEL install command       |
+| `dnf install <pkg>`  | Fedora/CentOS newer version       |
+| `snap install <pkg>` | Snap package install              |
+
+---
+
+## 🔍 **Search and Find**
+
+| Command                 | Description                   |
+| ----------------------- | ----------------------------- |
+| `find / -name file.txt` | File search panna             |
+| `grep "text" file`      | Text search panna             |
+| `locate filename`       | Fast file search              |
+| `which cmd`             | Command location kaatuvum     |
+| `whereis cmd`           | Binary, source, man page path |
+
+---
+
+## 🔄 **Compression and Archive**
+
+| Command                     | Description                 |
+| --------------------------- | --------------------------- |
+| `tar -cvf file.tar folder/` | Folder archive create panna |
+| `tar -xvf file.tar`         | Extract panna               |
+| `gzip file`                 | Compress panna              |
+| `gunzip file.gz`            | Decompress panna            |
+| `zip -r file.zip folder/`   | Zip file create panna       |
+| `unzip file.zip`            | Extract zip file            |
+
+---
+
+## ⚡ **Process Management**
+
+| Command             | Description                |
+| ------------------- | -------------------------- |
+| `ps aux`            | All processes list         |
+| `kill <pid>`        | Process kill panna         |
+| `killall <process>` | Process name-based kill    |
+| `top`               | Live process viewer        |
+| `bg`                | Process background la move |
+| `fg`                | Foreground la move         |
+| `jobs`              | Background jobs list       |
+
+---
+
+## 🔐 **File Permission Numbers**
+
+| Number | Meaning |
+| ------ | ------- |
+| 0      | ---     |
+| 1      | --x     |
+| 2      | -w-     |
+| 3      | -wx     |
+| 4      | r--     |
+| 5      | r-x     |
+| 6      | rw-     |
+| 7      | rwx     |
+
+Example → `chmod 755 file`
+
+---
+
+## 🧰 **Useful Shortcuts**
+
+| Shortcut   | Action                    |
+| ---------- | ------------------------- |
+| `Ctrl + C` | Stop command              |
+| `Ctrl + D` | Logout / End input        |
+| `Ctrl + L` | Clear screen              |
+| `Ctrl + R` | Reverse search in history |
+
+---
+
+## 🧑‍💻 **Admin (Root) Commands**
+
+| Command                   | Description            |
+| ------------------------- | ---------------------- |
+| `sudo su`                 | Root user switch       |
+| `reboot`                  | System restart         |
+| `shutdown -h now`         | Shutdown immediately   |
+| `service <name> start`    | Start service          |
+| `service <name> stop`     | Stop service           |
+| `systemctl status <name>` | Check service status   |
+| `journalctl -xe`          | System logs view panna |
+
+---
